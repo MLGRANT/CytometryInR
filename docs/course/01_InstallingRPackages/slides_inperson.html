@@ -234,42 +234,6 @@ David Rach
 </div>
 </div>
 </section>
-<section class="slide level2">
-
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p>Before getting started, please make sure you have completed the creating a <a href="../../course/00_GitHub/">GitHub</a> and <a href="../../course/00_WorkstationSetup/">Workstation Setup</a> walk-throughs, since we will begin where they left off once the required software was successfully installed.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p>Please make sure to <a href="../../course/00_Homeworks/index.html#sync-your-fork">sync</a> your forked version of the CytometryInR repository, and <a href="../../course/00_Git/index.html#pull">pull</a> any changes to your local computer’s CytometryInR project folder so that you have the most recent version of the code and data available.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-</section>
 <section>
 <section id="background" class="title-slide slide level1 center">
 <h1>Background</h1>
@@ -347,42 +311,6 @@ David Rach
 </section>
 <section class="slide level2">
 
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>R packages can also just be made for fun! Among my favorite examples of this, there is an R package that lets you add the snake game to your <a href="https://github.com/AdamSpannbauer/snakeLoadR">recalculating screen</a>, as well as R packages that provide the color-palette schemes needed to make your plots with <a href="https://github.com/ewenme/ghibli">Studio Ghibli</a>, <a href="https://github.com/karthik/wesanderson">Wes Anderson</a>, or <a href="https://github.com/ekholme/blueycolors">Bluey</a> colors.</p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<p><img data-src="images/Ghibli.png" data-fig-width="100"></p>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>These R packages start off as <a href="https://r-pkgs.org/structure.html#sec-package-states">source code</a> (which is what we will be learning to write during this course). When you install a R package to your computer, this human-readable source code gets converted into a binary format with which your computer can interact directly.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -403,23 +331,6 @@ David Rach
 </section>
 <section class="slide level2">
 
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>To make distributing the thousands of R packages and their associated package dependencies easier, R packages are collected (ie. hosted) within <strong>repositories</strong>, which function as an intermediate distributor.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="fragment">
 <div title=".">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -457,23 +368,6 @@ David Rach
 </div>
 </div>
 </div>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>In this session, we will work on installing the various R packages we will need through the course. While doing so, we will explore how to figure out which repository the individual package is in; what installation commands to use to download it; and how to look up the help documentation. We will also touch on how the functions within an R package are made available for our computer to use (via the <code>library()</code> call), and how to troubleshoot the more commonly encountered installation errors.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <section class="slide level2">
 
@@ -483,110 +377,6 @@ David Rach
 <h1>Getting Started</h1>
 
 </section>
-<section id="set-up" class="slide level2">
-<h2>Set Up</h2>
-<p>Alright, with the background out of the way, let’s get started!</p>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p>Please make sure to <a href="../../course/00_Homeworks/index.html#sync-your-fork">sync</a> your forked version of the CytometryInR repository, and <a href="../../course/00_Git/index.html#pull">pull</a> any changes to your local computer’s CytometryInR project folder so that you have the most recent version of the code and data available.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<p>Please remember to always copy over the new material from your local CytometryInR folder to a separate Project Folder that you created and named (ex. “Week_01” or “MyLearningFolder”, etc.). This will ensure any edits you make to the files do not affect your ability to bring in next week’s materials to the CytometryInR folder</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<p>After pulling the new data and code locally, open CytometryInR, open the course folder, and open the 01_InstallingRPackages folder. From here, copy the <strong>index.qmd</strong> file to your own working Project Folder (ex. Week_01) where you can work on it without causing any conflicts. Then return to Positron and open up your working project folder (ex. Week_01).</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/01_Interpreter.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Next up, within <a href="../../course/00_Positron/index.html#interpreter">Positron</a>, let’s make sure to select R as the coding language being used for this session.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/01_Interpreter.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Now that R is running within Positron, the console (lower portion of the screenn) is now able to run (ie. execute) any R code that is sent to it.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="https://positron.posit.co/images/user-interface-for-rstudio-migration.jpeg" class="r-stretch"></section>
 <section id="checking-for-loaded-packages" class="slide level2">
 <h2>Checking for Loaded Packages</h2>
 <div class="fragment">
@@ -660,23 +450,6 @@ David Rach
 <section class="slide level2">
 
 <div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>In this case, we can see the help documentation corresponding for <code>sessionInfo()</code>. Beyond hovering over the function, this can also be accessed by adding a ? directly in front of the function, and then running that line of code.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>?<span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -686,54 +459,6 @@ David Rach
 
 
 <img data-src="images/03_QuestionMark.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>When executed, the function’s help file documentation will open up within the Help tab in the secondary side bar on the right-side of the screen. Glancing at the top of the page we can see the name of the package that contains the <code>sessionInfo()</code> function (<code>{utils}</code>). Scrolling down the help page past all the documentation, we can see a link to the index page.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/04_Index.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>After clicking, the Help tab switches from viewing the documentation for the <code>sessionInfo()</code> function, to showing all the functions within the <code>utils</code> package. Most R packages contain help documentation, so this process can be adapted to find out additional information about what a function does, and what arguments are needed to produce customized outputs.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/05_UtilsFunctions.png" class="r-stretch"></section>
 <section class="slide level2">
 
 <h3 id="sessioninfo">sessionInfo()</h3>
@@ -1205,213 +930,6 @@ you could try '??ggplot'</code></pre>
 </section>
 <section class="slide level2">
 
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Beyond individual functions, some R packages also have help landing pages, that can be similarly accessed by adding a ? in front of the package name:</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/11_PackageLanding.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="unattaching">Unattaching</h3>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>So far, we have installed an R package, and then attached it (via <code>library()</code>). How would we reverse these steps?</p>
-<p>Well, to unload it from the local environment, there are a couple options. You could of course simply shut down Positron. The local environment only exist in context of when you open and close the session, which closing the program will do. All previously loaded R packages will be unattached, which is why when you start a new session you will need to load in all packages you plan on using via <code>library()</code>.</p>
-<p>Alternatively, although less used, you could <code>detach()</code> it via your console:</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">detach</span>(<span class="st">"package:dplyr"</span>, <span class="at">unload=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>R version 4.5.2 (2025-10-31)
-Platform: x86_64-pc-linux-gnu
-Running under: Debian GNU/Linux 13 (trixie)
-
-Matrix products: default
-BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.1 
-LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.1;  LAPACK version 3.12.0
-
-locale:
- [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
- [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
- [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
- [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
- [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
-
-time zone: America/New_York
-tzcode source: system (glibc)
-
-attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
-
-loaded via a namespace (and not attached):
- [1] digest_0.6.39    R6_2.6.1         fastmap_1.2.0    tidyselect_1.2.1
- [5] xfun_0.56        magrittr_2.0.4   glue_1.8.0       tibble_3.3.1    
- [9] knitr_1.51       pkgconfig_2.0.3  htmltools_0.5.9  generics_0.1.4  
-[13] rmarkdown_2.30   lifecycle_1.0.5  cli_3.6.5        vctrs_0.7.1     
-[17] compiler_4.5.2   tools_4.5.2      evaluate_1.0.5   pillar_1.11.1   
-[21] yaml_2.3.12      otel_0.2.0       rlang_1.1.7      jsonlite_2.0.0  </code></pre>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Looking at the <code>sessionInfo()</code> output, dplyr is no longer attached to the local environment. Consequently, if we try to once again look for the documentation, no information will be retrieved.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>?dplyr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>No documentation for 'dplyr' in specified packages and libraries:
-you could try '??dplyr'</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>There is a workaround however, if we want to access functions from an unloaded R package. We can specify the R package’s name, followed by two :, and then the function name. The :: conveys the context to your computer that the package is present, but may not be attached.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>?dplyr<span class="sc">::</span><span class="fu">select</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>This particular use case can be useful if we want to run a particular function, but not load in all a packages functions (which may have identical function names to other R packages we are using and cause some conflicts).</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="removing-packages">Removing Packages</h3>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Just as we can install an R package, we can also uninstall an R package (although doing so is rare, most often when encountering package dependency conflict). To do so, we would use the <code>remove.packages()</code> function.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>?<span class="fu">remove.packages</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">remove.packages</span>(<span class="st">"dplyr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>This results in the package being removed entirely from our computer. We would then need to reinstall it if needed in the future.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
 <h3 id="common-issues">Common Issues</h3>
 <div class="fragment">
 <div title=".">
@@ -1433,7 +951,7 @@ you could try '??dplyr'</code></pre>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">install.packages</span>(<span class="st">"PeacoQC"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">install.packages</span>(<span class="st">"PeacoQC"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1500,7 +1018,7 @@ you could try '??dplyr'</code></pre>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">install.packages</span>(<span class="st">"BiocManager"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">install.packages</span>(<span class="st">"BiocManager"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1525,7 +1043,7 @@ you could try '??dplyr'</code></pre>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">library</span>(BiocManager)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">library</span>(BiocManager)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1564,12 +1082,12 @@ you could try '??dplyr'</code></pre>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>?<span class="fu">install</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>?<span class="fu">install</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">install</span>(<span class="st">"PeacoQC"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">install</span>(<span class="st">"PeacoQC"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1790,7 +1308,7 @@ you could try '??dplyr'</code></pre>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">library</span>(PeacoQC)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">library</span>(PeacoQC)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1815,7 +1333,7 @@ you could try '??dplyr'</code></pre>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>R version 4.5.2 (2025-10-31)
 Platform: x86_64-pc-linux-gnu
@@ -1840,7 +1358,7 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
-[1] PeacoQC_1.20.0      BiocManager_1.30.27
+[1] PeacoQC_1.20.0      BiocManager_1.30.27 dplyr_1.1.4        
 
 loaded via a namespace (and not attached):
  [1] generics_0.1.4        shape_1.4.6.1         digest_0.6.39        
@@ -1853,17 +1371,17 @@ loaded via a namespace (and not attached):
 [22] cli_3.6.5             RProtoBufLib_2.22.0   rlang_1.1.7          
 [25] crayon_1.5.3          Biobase_2.70.0        yaml_2.3.12          
 [28] otel_0.2.0            cytolib_2.22.0        ncdfFlow_2.56.0      
-[31] tools_4.5.2           parallel_4.5.2        dplyr_1.1.4          
-[34] colorspace_2.1-2      ggplot2_4.0.1         GetoptLong_1.1.0     
-[37] BiocGenerics_0.56.0   vctrs_0.7.1           R6_2.6.1             
-[40] png_0.1-8             matrixStats_1.5.0     stats4_4.5.2         
-[43] lifecycle_1.0.5       flowCore_2.22.1       S4Vectors_0.48.0     
-[46] IRanges_2.44.0        clue_0.3-66           cluster_2.1.8.1      
-[49] pkgconfig_2.0.3       pillar_1.11.1         gtable_0.3.6         
-[52] data.table_1.18.2.1   glue_1.8.0            xfun_0.56            
-[55] tibble_3.3.1          tidyselect_1.2.1      knitr_1.51           
-[58] farver_2.1.2          rjson_0.2.23          htmltools_0.5.9      
-[61] rmarkdown_2.30        compiler_4.5.2        S7_0.2.1             </code></pre>
+[31] tools_4.5.2           parallel_4.5.2        colorspace_2.1-2     
+[34] ggplot2_4.0.1         GetoptLong_1.1.0      BiocGenerics_0.56.0  
+[37] vctrs_0.7.1           R6_2.6.1              png_0.1-8            
+[40] matrixStats_1.5.0     stats4_4.5.2          lifecycle_1.0.5      
+[43] flowCore_2.22.1       S4Vectors_0.48.0      IRanges_2.44.0       
+[46] clue_0.3-66           cluster_2.1.8.1       pkgconfig_2.0.3      
+[49] pillar_1.11.1         gtable_0.3.6          data.table_1.18.2.1  
+[52] glue_1.8.0            xfun_0.56             tibble_3.3.1         
+[55] tidyselect_1.2.1      knitr_1.51            farver_2.1.2         
+[58] rjson_0.2.23          htmltools_0.5.9       rmarkdown_2.30       
+[61] compiler_4.5.2        S7_0.2.1             </code></pre>
 </div>
 </div>
 </div>
@@ -1913,7 +1431,7 @@ loaded via a namespace (and not attached):
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">installed.packages</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">installed.packages</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1997,7 +1515,7 @@ loaded via a namespace (and not attached):
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2042,7 +1560,7 @@ loaded via a namespace (and not attached):
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">library</span>(remotes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">library</span>(remotes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2087,9 +1605,9 @@ loaded via a namespace (and not attached):
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="co"># Either by hovering over it within Positron or via</span></span>
-<span id="cb36-2"><a></a></span>
-<span id="cb36-3"><a></a>?<span class="fu">install_github</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="co"># Either by hovering over it within Positron or via</span></span>
+<span id="cb28-2"><a></a></span>
+<span id="cb28-3"><a></a>?<span class="fu">install_github</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2139,7 +1657,7 @@ loaded via a namespace (and not attached):
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">install_github</span>(<span class="st">"hally166/flowSpectrum"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">install_github</span>(<span class="st">"hally166/flowSpectrum"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -2210,252 +1728,6 @@ loaded via a namespace (and not attached):
 </div>
 </div>
 </div>
-</div>
-</div>
-</section>
-<section id="installing-specific-package-versions" class="slide level2">
-<h2>Installing Specific-Package Versions</h2>
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>While we may be tempted to think of R packages as static, they change quite often, as their develipers add new features, fix bugs, etc. To help keep track of these changes (essential for <a href="https://www.nature.com/articles/d42473-019-00004-y">reproducibility</a> and replicability), R packages have version numbers.</p>
-<p>When we run <code>sessionInfo()</code>, we can see an example of this, with the version number appearing after the package name.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>R version 4.5.2 (2025-10-31)
-Platform: x86_64-pc-linux-gnu
-Running under: Debian GNU/Linux 13 (trixie)
-
-Matrix products: default
-BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.1 
-LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.1;  LAPACK version 3.12.0
-
-locale:
- [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
- [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
- [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
- [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
- [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
-
-time zone: America/New_York
-tzcode source: system (glibc)
-
-attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
-
-other attached packages:
-[1] PeacoQC_1.20.0      BiocManager_1.30.27
-
-loaded via a namespace (and not attached):
- [1] generics_0.1.4        shape_1.4.6.1         digest_0.6.39        
- [4] magrittr_2.0.4        evaluate_1.0.5        grid_4.5.2           
- [7] RColorBrewer_1.1-3    iterators_1.0.14      circlize_0.4.17      
-[10] fastmap_1.2.0         foreach_1.5.2         doParallel_1.0.17    
-[13] jsonlite_2.0.0        graph_1.88.1          GlobalOptions_0.1.3  
-[16] ComplexHeatmap_2.26.0 flowWorkspace_4.22.1  scales_1.4.0         
-[19] XML_3.99-0.20         Rgraphviz_2.54.0      codetools_0.2-20     
-[22] cli_3.6.5             RProtoBufLib_2.22.0   rlang_1.1.7          
-[25] crayon_1.5.3          Biobase_2.70.0        yaml_2.3.12          
-[28] otel_0.2.0            cytolib_2.22.0        ncdfFlow_2.56.0      
-[31] tools_4.5.2           parallel_4.5.2        dplyr_1.1.4          
-[34] colorspace_2.1-2      ggplot2_4.0.1         GetoptLong_1.1.0     
-[37] BiocGenerics_0.56.0   vctrs_0.7.1           R6_2.6.1             
-[40] png_0.1-8             matrixStats_1.5.0     stats4_4.5.2         
-[43] lifecycle_1.0.5       flowCore_2.22.1       S4Vectors_0.48.0     
-[46] IRanges_2.44.0        clue_0.3-66           cluster_2.1.8.1      
-[49] pkgconfig_2.0.3       pillar_1.11.1         gtable_0.3.6         
-[52] data.table_1.18.2.1   glue_1.8.0            xfun_0.56            
-[55] tibble_3.3.1          tidyselect_1.2.1      knitr_1.51           
-[58] farver_2.1.2          rjson_0.2.23          htmltools_0.5.9      
-[61] rmarkdown_2.30        compiler_4.5.2        S7_0.2.1             </code></pre>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Alternatively, we can retrieve the same information for the individual packages via the <code>packageVersion()</code> function</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a><span class="fu">packageVersion</span>(<span class="st">"PeacoQC"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] '1.20.0'</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>As well as from the <code>citation()</code> function.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a><span class="fu">citation</span>(<span class="st">"PeacoQC"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>To cite package 'PeacoQC' in publications use:
-
-  Emmaneel A (2025). _PeacoQC: Peak-based selection of high quality
-  cytometry data_. doi:10.18129/B9.bioc.PeacoQC
-  &lt;https://doi.org/10.18129/B9.bioc.PeacoQC&gt;, R package version 1.20.0,
-  &lt;https://bioconductor.org/packages/PeacoQC&gt;.
-
-A BibTeX entry for LaTeX users is
-
-  @Manual{,
-    title = {PeacoQC: Peak-based selection of high quality cytometry data},
-    author = {Annelies Emmaneel},
-    year = {2025},
-    note = {R package version 1.20.0},
-    url = {https://bioconductor.org/packages/PeacoQC},
-    doi = {10.18129/B9.bioc.PeacoQC},
-  }</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>How does a version number work? Lets say we have the following version number: <strong>1.20.0</strong></p>
-<p>The first number of the version (<strong>1.</strong> in this case) denotes major changes, primarily those where after the version change the package may not be compatible with the code used in the prior version. As a consequence, this number changes rarely.</p>
-<p>The second number (<strong>.20.</strong> in this case) is the minor version. Minor changes typically consist of new features that are added, that don’t affect the overall package function. These will change more frequently, especially for Bioconductor packages with fixed <a href="https://www.bioconductor.org/developers/release-schedule/">release cycles</a>.</p>
-<p>The final number (<strong>.0</strong> in this case) is often used to denote small changes occuring within a minor release period, often bug-fixes or fixing typos within the documentation.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>We may in the future need to install specific package versions (but wont be doing so today). As expected, which repository contains the R package influences how we would go about doing this.</p>
-<p>For CRAN packages, we can use the <code>remotes</code> packages <code>install_version()</code> function. This allows us to provide the version number, and designate the repository location (the CRAN url in this case).</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a>remotes<span class="sc">::</span><span class="fu">install_version</span>(<span class="st">"ggplot2"</span>, <span class="at">version =</span> <span class="st">"3.5.2"</span>, <span class="at">repos =</span> <span class="st">"https://cloud.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>For GitHub-based R packages, the package versioning schema is not as strict as that of CRAN or Bioconductor. Typically, changes in R packagaes are put out by their developers as <a href="https://github.com/DavidRach/Luciernaga/releases">releases</a>. When trying to install a particular release, we can add an additional argument to the <code>install_github()</code> function, specifying the release version’s tag number. For example:</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"DavidRach/Luciernaga"</span>, <span class="at">ref =</span> <span class="st">"v0.99.7"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="fragment">
-<div title=".">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>.</strong></p>
-</div>
-<div class="callout-content">
-<p>Alternatively, if the developer doesn’t implement releases, you can provide the hash number of a particular commit.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"DavidRach/Luciernaga"</span>, <span class="at">ref =</span> <span class="st">"8d1d694"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -2746,10 +2018,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb47-2"><a></a><span class="co"># Website: https://purrr.tidyverse.org/</span></span>
-<span id="cb47-3"><a></a></span>
-<span id="cb47-4"><a></a><span class="fu">install.packages</span>(<span class="st">"purrr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb30-2"><a></a><span class="co"># Website: https://purrr.tidyverse.org/</span></span>
+<span id="cb30-3"><a></a></span>
+<span id="cb30-4"><a></a><span class="fu">install.packages</span>(<span class="st">"purrr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2775,10 +2047,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a></a><span class="co"># Location: Bioconductor</span></span>
-<span id="cb48-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/flowCore.html</span></span>
-<span id="cb48-3"><a></a></span>
-<span id="cb48-4"><a></a><span class="fu">install</span>(<span class="st">"flowCore"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="co"># Location: Bioconductor</span></span>
+<span id="cb31-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/flowCore.html</span></span>
+<span id="cb31-3"><a></a></span>
+<span id="cb31-4"><a></a><span class="fu">install</span>(<span class="st">"flowCore"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2804,10 +2076,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a><span class="co"># Location: Bioconductor</span></span>
-<span id="cb49-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/flowWorkspace.html</span></span>
-<span id="cb49-3"><a></a></span>
-<span id="cb49-4"><a></a><span class="fu">install</span>(<span class="st">"flowWorkspace"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="co"># Location: Bioconductor</span></span>
+<span id="cb32-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/flowWorkspace.html</span></span>
+<span id="cb32-3"><a></a></span>
+<span id="cb32-4"><a></a><span class="fu">install</span>(<span class="st">"flowWorkspace"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2833,10 +2105,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb50-2"><a></a><span class="co"># Website: https://stringr.tidyverse.org/</span></span>
-<span id="cb50-3"><a></a></span>
-<span id="cb50-4"><a></a><span class="fu">install.packages</span>(<span class="st">"stringr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb33-2"><a></a><span class="co"># Website: https://stringr.tidyverse.org/</span></span>
+<span id="cb33-3"><a></a></span>
+<span id="cb33-4"><a></a><span class="fu">install.packages</span>(<span class="st">"stringr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2862,10 +2134,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb51-2"><a></a><span class="co"># Website: https://ggplot2.tidyverse.org/</span></span>
-<span id="cb51-3"><a></a></span>
-<span id="cb51-4"><a></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb34-2"><a></a><span class="co"># Website: https://ggplot2.tidyverse.org/</span></span>
+<span id="cb34-3"><a></a></span>
+<span id="cb34-4"><a></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2891,10 +2163,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a></a><span class="co"># Location: Bioconductor</span></span>
-<span id="cb52-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/ggcyto.html</span></span>
-<span id="cb52-3"><a></a></span>
-<span id="cb52-4"><a></a><span class="fu">install</span>(<span class="st">"ggcyto"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="co"># Location: Bioconductor</span></span>
+<span id="cb35-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/ggcyto.html</span></span>
+<span id="cb35-3"><a></a></span>
+<span id="cb35-4"><a></a><span class="fu">install.packages</span>(<span class="st">"ggcyto"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2920,10 +2192,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb53-2"><a></a><span class="co"># Website: https://tidyr.tidyverse.org/</span></span>
-<span id="cb53-3"><a></a></span>
-<span id="cb53-4"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb36-2"><a></a><span class="co"># Website: https://tidyr.tidyverse.org/</span></span>
+<span id="cb36-3"><a></a></span>
+<span id="cb36-4"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2949,10 +2221,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a></a><span class="co"># Location: Bioconductor</span></span>
-<span id="cb54-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/openCyto.html</span></span>
-<span id="cb54-3"><a></a></span>
-<span id="cb54-4"><a></a><span class="fu">install</span>(<span class="st">"openCyto"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="co"># Location: Bioconductor</span></span>
+<span id="cb37-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/openCyto.html</span></span>
+<span id="cb37-3"><a></a></span>
+<span id="cb37-4"><a></a><span class="fu">install.packages</span>(<span class="st">"openCyto"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -2978,10 +2250,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a></a><span class="co"># Location: Bioconductor</span></span>
-<span id="cb55-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/FlowSOM.html</span></span>
-<span id="cb55-3"><a></a></span>
-<span id="cb55-4"><a></a><span class="fu">install</span>(<span class="st">"FlowSOM"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="co"># Location: Bioconductor</span></span>
+<span id="cb38-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/FlowSOM.html</span></span>
+<span id="cb38-3"><a></a></span>
+<span id="cb38-4"><a></a><span class="fu">install.packages</span>(<span class="st">"FlowSOM"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3007,10 +2279,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb56-2"><a></a><span class="co"># Website: https://xml2.r-lib.org/</span></span>
-<span id="cb56-3"><a></a></span>
-<span id="cb56-4"><a></a><span class="fu">install.packages</span>(<span class="st">"xml2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb39-2"><a></a><span class="co"># Website: https://xml2.r-lib.org/</span></span>
+<span id="cb39-3"><a></a></span>
+<span id="cb39-4"><a></a><span class="fu">install.packages</span>(<span class="st">"xml2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3036,10 +2308,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a></a><span class="co"># Location: GitHub</span></span>
-<span id="cb57-2"><a></a><span class="co"># Website: https://github.com/saeyslab/CytoNorm</span></span>
-<span id="cb57-3"><a></a></span>
-<span id="cb57-4"><a></a><span class="fu">install_github</span>(<span class="st">"saeyslab/CytoNorm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a><span class="co"># Location: GitHub</span></span>
+<span id="cb40-2"><a></a><span class="co"># Website: https://github.com/saeyslab/CytoNorm</span></span>
+<span id="cb40-3"><a></a></span>
+<span id="cb40-4"><a></a><span class="fu">install_github</span>(<span class="st">"saeyslab/CytoNorm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3065,10 +2337,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb58-2"><a></a><span class="co"># Website: https://lubridate.tidyverse.org/</span></span>
-<span id="cb58-3"><a></a></span>
-<span id="cb58-4"><a></a><span class="fu">install.packages</span>(<span class="st">"lubridate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb41-2"><a></a><span class="co"># Website: https://lubridate.tidyverse.org/</span></span>
+<span id="cb41-3"><a></a></span>
+<span id="cb41-4"><a></a><span class="fu">install.packages</span>(<span class="st">"lubridate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3094,10 +2366,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb59-2"><a></a><span class="co"># Website: https://httr2.r-lib.org/</span></span>
-<span id="cb59-3"><a></a></span>
-<span id="cb59-4"><a></a><span class="fu">install.packages</span>(<span class="st">"httr2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb42-2"><a></a><span class="co"># Website: https://httr2.r-lib.org/</span></span>
+<span id="cb42-3"><a></a></span>
+<span id="cb42-4"><a></a><span class="fu">install.packages</span>(<span class="st">"httr2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3123,10 +2395,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a></a><span class="co"># Location: Bioconductor</span></span>
-<span id="cb60-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/flowGate.html</span></span>
-<span id="cb60-3"><a></a></span>
-<span id="cb60-4"><a></a><span class="fu">install</span>(<span class="st">"flowGate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a><span class="co"># Location: Bioconductor</span></span>
+<span id="cb43-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/flowGate.html</span></span>
+<span id="cb43-3"><a></a></span>
+<span id="cb43-4"><a></a><span class="fu">install</span>(<span class="st">"flowGate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3152,10 +2424,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb61-2"><a></a><span class="co"># Website: https://devtools.r-lib.org/</span></span>
-<span id="cb61-3"><a></a></span>
-<span id="cb61-4"><a></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb44-2"><a></a><span class="co"># Website: https://devtools.r-lib.org/</span></span>
+<span id="cb44-3"><a></a></span>
+<span id="cb44-4"><a></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3181,10 +2453,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb62-2"><a></a><span class="co"># Website: https://plotly.com/r/getting-started/</span></span>
-<span id="cb62-3"><a></a></span>
-<span id="cb62-4"><a></a><span class="fu">install.packages</span>(<span class="st">"plotly"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb45-2"><a></a><span class="co"># Website: https://plotly.com/r/getting-started/</span></span>
+<span id="cb45-3"><a></a></span>
+<span id="cb45-4"><a></a><span class="fu">install.packages</span>(<span class="st">"plotly"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3210,10 +2482,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a></a><span class="co"># Location: GitHub</span></span>
-<span id="cb63-2"><a></a><span class="co"># Website: https://github.com/biosurf/cyCombine</span></span>
-<span id="cb63-3"><a></a></span>
-<span id="cb63-4"><a></a><span class="fu">install_github</span>(<span class="st">"biosurf/cyCombine"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a><span class="co"># Location: GitHub</span></span>
+<span id="cb46-2"><a></a><span class="co"># Website: https://github.com/biosurf/cyCombine</span></span>
+<span id="cb46-3"><a></a></span>
+<span id="cb46-4"><a></a><span class="fu">install_github</span>(<span class="st">"biosurf/cyCombine"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3239,10 +2511,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a></a><span class="co"># Location: Bioconductor</span></span>
-<span id="cb64-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/CytoML.html</span></span>
-<span id="cb64-3"><a></a></span>
-<span id="cb64-4"><a></a><span class="fu">install</span>(<span class="st">"CytoML"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="co"># Location: Bioconductor</span></span>
+<span id="cb47-2"><a></a><span class="co"># Website: https://www.bioconductor.org/packages/release/bioc/html/CytoML.html</span></span>
+<span id="cb47-3"><a></a></span>
+<span id="cb47-4"><a></a><span class="fu">install</span>(<span class="st">"CytoML"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3268,10 +2540,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb65-2"><a></a><span class="co"># Website: https://github.com/jkrijthe/Rtsne</span></span>
-<span id="cb65-3"><a></a></span>
-<span id="cb65-4"><a></a><span class="fu">install.packages</span>(<span class="st">"Rtsne"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb48-2"><a></a><span class="co"># Website: https://github.com/jkrijthe/Rtsne</span></span>
+<span id="cb48-3"><a></a></span>
+<span id="cb48-4"><a></a><span class="fu">install.packages</span>(<span class="st">"Rtsne"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -3297,10 +2569,10 @@ A BibTeX entry for LaTeX users is
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a></a><span class="co"># Location: CRAN</span></span>
-<span id="cb66-2"><a></a><span class="co"># Website:https://jlmelville.github.io/uwot/</span></span>
-<span id="cb66-3"><a></a></span>
-<span id="cb66-4"><a></a><span class="fu">install.packages</span>(<span class="st">"uwot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a><span class="co"># Location: CRAN</span></span>
+<span id="cb49-2"><a></a><span class="co"># Website:https://jlmelville.github.io/uwot/</span></span>
+<span id="cb49-3"><a></a></span>
+<span id="cb49-4"><a></a><span class="fu">install.packages</span>(<span class="st">"uwot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
